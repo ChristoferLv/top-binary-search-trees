@@ -42,8 +42,14 @@ class Tree {
         const middle = Math.trunc(start + (end - start) / 2);
         const root = NodeMaker(arr[middle]);
 
-        //Verificar possibilidade de otimização fazendo verificação do start > end antes da chamada, diminui chamdas inuteis
+        // (Otimização)É possível adicionar essa verificação antes da chamada recursiva para 
+        // não fazer uma chamada inútil, pois como esse é a verificação do caso base, evitaria 
+        // quase metade das chamadas que na verdade vão só retornar sem fazer nada, e então removeria 
+        // a verificação if (start > end) return null; se essa linha estiver ativa, valido tambem para
+        // a chamada do right
+        // if (!(start > middle - 1))
         root.left = this.#treeBuilder(arr, start, middle - 1);
+        // if (!(middle + 1 > end))
         root.right = this.#treeBuilder(arr, middle + 1, end);
 
         return root;
