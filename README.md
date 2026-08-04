@@ -1,55 +1,55 @@
 # Binary Search Trees
 
-Projeto de estrutura de dados desenvolvido como parte da trilha JavaScript do [The Odin Project](https://www.theodinproject.com/lessons/javascript-binary-search-trees), com foco em implementação e manipulação de uma árvore binária de busca.
+Data structure project developed as part of the JavaScript path of [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript), focused on implementing and working with a binary search tree.
 
-## Objetivo do Projeto
+## Project Objective
 
-O objetivo principal foi praticar:
-- Construção de uma BST balanceada a partir de um array
-- Inserção, busca e remoção de valores
-- Percursos da árvore com callbacks
-- Cálculo de altura e profundidade
-- Validação de balanceamento e rebalanceamento da árvore
+The main objective was to practice:
+- Building a balanced BST from an array
+- Inserting, searching, and removing values
+- Tree traversals with callbacks
+- Calculating height and depth
+- Checking tree balance and rebalancing the tree
 
-## O que é?
+## What is it?
 
-Uma implementação da classe `Tree` em JavaScript com métodos para criar e operar em uma Binary Search Tree.
+An implementation of the `Tree` class in JavaScript with methods to create and operate on a Binary Search Tree.
 
-A árvore inicial é montada a partir de um array, removendo duplicados, ordenando os valores e construindo uma BST balanceada. O arquivo de demonstração inclui uma função `prettyPrint` para visualizar a estrutura no terminal.
+The initial tree is built from an array by removing duplicates, sorting the values, and constructing a balanced BST. The demo file includes a `prettyPrint` function to visualize the structure in the terminal.
 
-## Como usar
+## How to use
 
-1. Entre na pasta do projeto:
-   `cd Javascript/top-binary-search-trees`
-2. Execute o arquivo de demonstração:
+1. Enter the project folder:
+   `Javascript/top-binary-search-trees`
+2. Run the demo file:
    `node index.js`
 
-## Funcionalidades
+## Features
 
-- **`constructor(arr)`**: cria a árvore a partir de um array de números
-- **`includes(value)`**: verifica se um valor existe na árvore
-- **`insert(value)`**: insere um novo valor na BST
-- **`deleteItem(value)`**: remove um valor da árvore
-- **`levelOrderForEach(callback)`**: percorre a árvore em largura
-- **`inOrderForEach(callback)`**: percurso inorder
-- **`preOrderForEach(callback)`**: percurso preorder
-- **`postOrderForEach(callback)`**: percurso postorder
-- **`height(value)`**: retorna a altura do nó informado
-- **`depth(value)`**: retorna a profundidade do nó informado
-- **`isBalanced()`**: verifica se a árvore está balanceada
-- **`rebalance()`**: rebalanceia a árvore atual
+- **`constructor(arr)`**: builds the tree from an array of numbers
+- **`includes(value)`**: checks whether a value exists in the tree
+- **`insert(value)`**: inserts a new value into the BST
+- **`deleteItem(value)`**: removes a value from the tree
+- **`levelOrderForEach(callback)`**: traverses the tree in breadth-first order
+- **`inOrderForEach(callback)`**: inorder traversal
+- **`preOrderForEach(callback)`**: preorder traversal
+- **`postOrderForEach(callback)`**: postorder traversal
+- **`height(value)`**: returns the height of the requested node
+- **`depth(value)`**: returns the depth of the requested node
+- **`isBalanced()`**: checks whether the tree is balanced
+- **`rebalance()`**: rebalances the current tree
 
-## Estrutura de Arquivos
+## File Structure
 
-- `Tree.js`: implementação da classe `Tree` e dos algoritmos da BST
-- `index.js`: script de demonstração com criação da árvore e chamadas dos métodos
+- `Tree.js`: implementation of the `Tree` class and BST algorithms
+- `index.js`: demo script with tree creation and method calls
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - JavaScript (ES Modules)
 
 ---
 
-Projeto desenvolvido seguindo: [The Odin Project - Binary Search Trees](https://www.theodinproject.com/lessons/javascript-binary-search-trees)
+Project developed following: [The Odin Project - Binary Search Trees](https://www.theodinproject.com/lessons/javascript-binary-search-trees)
 
-📍 **Repositório principal com todos os projetos**: [ChristoferLv/TheOdinProject](https://github.com/ChristoferLv/TheOdinProject)
+📍 **Main repository with all projects**: [ChristoferLv/TheOdinProject](https://github.com/ChristoferLv/TheOdinProject)
